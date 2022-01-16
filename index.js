@@ -35,14 +35,14 @@
  
    
 
- function myDate(){
-   let today = new Date();
-   let dd = String(today.getDate()).padStart(2, '0');
-   let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!const yyyy = today.getFullYear();
-   let yyyy = today.getFullYear();
  
-   let day = mm + '/' + dd + '/' + yyyy;
-    document.getElementById("#date").innerHTML = day;
- }
-
- myDate();
+   const today = new Date();
+   const dd = String(today.getDate()).padStart(2, '0');
+   const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!const yyyy = today.getFullYear();
+   const yyyy = today.getFullYear();
+ 
+   const day = dd + '/' + mm + '/' + yyyy;
+   console.log(day);
+   
+ document.getElementById("date").innerHTML = `Date: ${day}`;
+ 
